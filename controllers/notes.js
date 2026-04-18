@@ -1,9 +1,8 @@
 const router = require('express').Router()
-const { Op } = require('sequelize')
-const { Note, User } = require('../models')
-
 const jwt = require('jsonwebtoken')
+const { Op } = require('sequelize')
 const { SECRET } = require('../util/config')
+const { Note, User } = require('../models')
 
 const noteFinder = async (req, res, next) => {
     req.note = await Note.findByPk(req.params.id)

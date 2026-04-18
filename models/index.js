@@ -8,6 +8,5 @@ Note.sync({ alter: true })
 User.sync({ alter: true })
 
 module.exports = {
-    Note,
-    User
+    Note, User
 }
