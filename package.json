@@ -1,11 +1,11 @@
 {
-  "name": "fs-relational-databases",
+  "name": "fs-psql",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "migration:down": "node util/rollback.js"
   },
   "keywords": [],
   "author": "",
